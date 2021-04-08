@@ -1,0 +1,15 @@
+mat-sidenav-container{
+    height: 100%;
+}
+
+mat-sidenav, mat-sidenav-content{
+    padding: 16px;
+}
+mat-sidenav{
+    background-color: darkblue!important;
+    color: cornsilk;
+    width: 20%;
+}
+mat-nav-list>a{
+    color: cornsilk!important;
+}

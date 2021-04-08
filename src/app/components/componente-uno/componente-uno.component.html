@@ -1,0 +1,14 @@
+<div class="button-row">
+<button   mat-raised-button color="primary" (click)="metodo(array1)">
+    Arreglo 1
+</button>
+
+<button mat-raised-button color="warn" (click)="metodo(array2)" class="ml-3">
+    Arreglo2
+</button>
+</div>
+<div class="container mt-3">
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let array of miArray">{{array.name + ": " + array.value}}</li>
+      </ul>
+</div>

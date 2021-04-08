@@ -1,0 +1,13 @@
+<div id="logreg-forms">
+    <form *ngIf="!formRegistro && !formPassword" class="form-signin">
+        <!--Form de inicio de sesión-->
+        <h1 class="h3 mb-3 font-weight-normal text-center">Iniciar sesión</h1>
+        <input [(ngModel)]="usuario.usuario" type="email" class="form-control" placeholder="Nombre de usuario"
+            name="usuario" required autofocus>
+        <input [(ngModel)]="usuario.contrasena" type="password" class="form-control" placeholder="Password"
+            name="password" required>
+
+        <button mat-raised-button color="primary" type="submit"(click)="login(usuario)">Primary</button>
+        
+     </form>
+</div>
